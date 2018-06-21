@@ -120,6 +120,9 @@ body {
   font-weight: bold;
   position: relative;
 }
+.row.home .title h1 {
+  font-size: 4em;
+}
 .row.home .title h3 {
   position: absolute;
   top: 50%;
