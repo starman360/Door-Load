@@ -103,20 +103,24 @@ body {
 .row.home {
   text-align: center;
 }
-.row.home .col-8 h1 {
+.row.home .color h1,
+.row.home .vin h1,
+.row.home .drive h1 {
   font-size: 10em;
   font-weight: bold;
 }
-.row.home .col-8 h3 {
+.row.home .color h3,
+.row.home .vin h3,
+.row.home .drive h3 {
   font-size: 4em;
   margin-top: 50px;
   margin-bottom: 50px;
 }
-.row.home .col-4 {
+.row.home .title {
   font-weight: bold;
   position: relative;
 }
-.row.home .col-4 h3 {
+.row.home .title h3 {
   position: absolute;
   top: 50%;
   left: 25%;

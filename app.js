@@ -25,15 +25,34 @@ function getlivenums() {
     while (seq.length < 8){
         seq.push('-');
     }
+    for(i = 0; i < seq.length; i++){
+        seq[i] = seq[i].split(' ');
+    }
     var msg = {
-        "num1": seq[seq.length - 1],
-        "num2": seq[seq.length - 2],
-        "num3": seq[seq.length - 3],
-        "num4": seq[seq.length - 4],
-        "num5": seq[seq.length - 5],
-        "num6": seq[seq.length - 6],
-        "num7": seq[seq.length - 7],
-        "num8": seq[seq.length - 8]
+        "num1": seq[seq.length - 1][1],
+        "num2": seq[seq.length - 2][1],
+        "num3": seq[seq.length - 3][1],
+        "num4": seq[seq.length - 4][1],
+        "num5": seq[seq.length - 5][1],
+        "num6": seq[seq.length - 6][1],
+        "num7": seq[seq.length - 7][1],
+        "num8": seq[seq.length - 8][1],
+        "col1": seq[seq.length - 1][0],
+        "col2": seq[seq.length - 2][0],
+        "col3": seq[seq.length - 3][0],
+        "col4": seq[seq.length - 4][0],
+        "col5": seq[seq.length - 5][0],
+        "col6": seq[seq.length - 6][0],
+        "col7": seq[seq.length - 7][0],
+        "col8": seq[seq.length - 8][0],
+        "drive1": seq[seq.length - 1][2],
+        "drive2": seq[seq.length - 2][2],
+        "drive3": seq[seq.length - 3][2],
+        "drive4": seq[seq.length - 4][2],
+        "drive5": seq[seq.length - 5][2],
+        "drive6": seq[seq.length - 6][2],
+        "drive7": seq[seq.length - 7][2],
+        "drive8": seq[seq.length - 8][2]
     };
     return msg;
 }
@@ -46,15 +65,34 @@ function getmannums(){
     while (seq.length < 8){
         seq.push('-');
     }
+    for(i = 0; i < seq.length; i++){
+        seq[i] = seq[i].split(' ');
+    }
     var msg = {
-        "num1": seq[7],
-        "num2": seq[6],
-        "num3": seq[5],
-        "num4": seq[4],
-        "num5": seq[3],
-        "num6": seq[2],
-        "num7": seq[1],
-        "num8": seq[0]
+        "num1": seq[7][1],
+        "num2": seq[6][1],
+        "num3": seq[5][1],
+        "num4": seq[4][1],
+        "num5": seq[3][1],
+        "num6": seq[2][1],
+        "num7": seq[1][1],
+        "num8": seq[0][1],
+        "col1": seq[7][0],
+        "col2": seq[6][0],
+        "col3": seq[5][0],
+        "col4": seq[4][0],
+        "col5": seq[3][0],
+        "col6": seq[2][0],
+        "col7": seq[1][0],
+        "col8": seq[0][0],
+        "drive1": seq[7][2],
+        "drive2": seq[6][2],
+        "drive3": seq[5][2],
+        "drive4": seq[4][2],
+        "drive5": seq[3][2],
+        "drive6": seq[2][2],
+        "drive7": seq[1][2],
+        "drive8": seq[0][2]
     };
 
     return msg;
