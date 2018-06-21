@@ -23,7 +23,7 @@ function getlivenums() {
         seq.push(e)
     });
     while (seq.length < 8){
-        seq.push('-');
+        seq.push('- - -');
     }
     for(i = 0; i < seq.length; i++){
         seq[i] = seq[i].split(' ');
@@ -63,7 +63,7 @@ function getmannums(){
         seq.push(e)
     });
     while (seq.length < 8){
-        seq.push('-');
+        seq.push('- - -');
     }
     for(i = 0; i < seq.length; i++){
         seq[i] = seq[i].split(' ');
