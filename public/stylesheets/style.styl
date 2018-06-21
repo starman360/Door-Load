@@ -1,0 +1,63 @@
+@import 'nib'
+
+global-reset()
+
+main-color = #fa5b4d
+background-color = #faf9f0
+
+body
+    font-family 'Gotham'
+    background-color background-color
+    color #444
+    margin 0
+
+.wrapper
+    height 100vh
+    max-height 100vh
+    width 100vw
+    
+
+.row.home
+    text-align center
+    
+    .col-8
+        h1
+            font-size 10em
+            font-weight bold
+        
+        h3
+            font-size 4em
+            margin-top 50px
+            margin-bottom 50px
+    .col-4
+        font-weight bold
+        position: relative;
+
+        h3
+            position absolute
+            top 50%
+            left 25%
+            transform translateX(-50%)
+            transform translateY(-50%)
+            font-size 4em
+
+.row.editor
+    label
+        font-size 2em
+        margin-bottom 20px
+    
+.row.display
+    h2
+        font-size 4em
+        font-weight bold
+    h3
+        font-size 4em
+
+.fullheight
+    height 100vh
+
+form
+    margin-top 10px
+
+.headspace
+    margin-top 200px

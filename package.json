@@ -1,0 +1,20 @@
+{
+  "name": "doorload",
+  "version": "1.1.0",
+  "description": "A Doors Load Sequence viewer",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Anmol Modur",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "jade": "^1.11.0",
+    "morgan": "^1.9.0",
+    "nib": "^1.1.2",
+    "socket.io": "^2.1.1",
+    "stylus": "^0.54.5"
+  }
+}

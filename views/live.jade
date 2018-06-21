@@ -1,0 +1,54 @@
+doctype
+html
+  head
+    title #{title}
+    link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css")
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js')
+    script(src="/socket.io/socket.io.js")
+    script(src="/js/socket.js")
+  body
+    .container-fluid
+      .row.home
+        .col-4
+          h3 NEXT #4
+        .col-8
+          h3#num1
+      .row.home
+        .col-4
+          h3 NEXT #3
+        .col-8
+          h3#num2
+      .row.home
+        .col-4
+          h3 NEXT #2
+        .col-8
+          h3#num3
+      .row.home
+        .col-4
+          h3 NEXT #1
+        .col-8
+          h3#num4
+      .row.home
+        .col-4
+          h3 CURRENT
+        .col-8
+          h1#num5
+      .row.home
+        .col-4
+          h3 LAST #1
+        .col-8
+          h3#num6
+      .row.home
+        .col-4
+          h3 LAST #2
+        .col-8
+          h3#num7
+      .row.home
+        .col-4
+          h3 LAST #3
+        .col-8
+          h3#num8
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js')
+    script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T')
+    

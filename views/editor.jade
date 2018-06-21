@@ -1,0 +1,48 @@
+doctype
+html
+  head
+    title #{title}
+    link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css")
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js')
+    script(src="/socket.io/socket.io.js")
+    script(src="/js/socket.js")
+  body
+    .container
+      .row.editor
+        .col-12
+          form(method="post").headspace
+            .form-group
+              label(for="sequenceInput") Next number in sequence
+              input(type="text", class="form-control form-control-lg", id="sequenceInput", name="sequenceInput", aira-describedby="sequence", placeholder="VIN NUMBER (Last 5#) ex. #####")
+            button(type="submit", class="btn btn-primary") Update
+          form(method="post")
+            input(class="btn btn-outline-danger" type="submit" name="clear" value="Delete")
+      br
+      br
+      br
+      br
+      br
+    
+      .row.display
+        h2 Last Numbers
+      .row.display
+        h3#num1
+      .row.display
+        h3#num2
+      .row.display
+        h3#num3
+      .row.display
+        h3#num4
+      .row.display
+        h3#num5
+      .row.display
+        h3#num6
+      .row.display
+        h3#num7
+      .row.display
+        h3#num8
+
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js')
+    script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T')
+  
