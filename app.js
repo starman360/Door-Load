@@ -139,6 +139,6 @@ io.on('connection', function (socket) {
     });
 });
 
-http.listen(4040, function () {
-    console.log('listening on *:4040');
+http.listen(8080, function () {
+    console.log('listening on *:8080');
 });
